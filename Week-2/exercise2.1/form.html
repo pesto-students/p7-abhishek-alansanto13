@@ -8,7 +8,7 @@
     <style>
 
     body{
-      background-color: aqua;
+      background-color: rgb(255, 255, 255);
     }
 
     header{
@@ -19,36 +19,44 @@
 
 
     .para1{
-      background-color: bisque;
+      background-color:  rgb(255, 162, 176);
       font-size: x-large;
+      border-radius: 20px 20px 0px 0px;
     }
      
      .para3{
-      background-color: lightpink;
+      background-color: rgb(255, 162, 176);
       font-size: x-large;
+      border-radius: 20px 20px 0px 0px;
      }
 
      .para4{
-      background-color: red;
-
+      background-color: rgb(255, 166, 166);
+      border-radius: 20px 20px 0px 0px;
       font-size: x-large;
       
      }
 
-     .submit{
+     .btn:hover{
+     background-color: rgb(174, 247, 237);
+     }
+
+     .btn{
+      background-color: rgb(74, 193, 248);
+      height: 30px;
+      width: 200px;
       margin-top: 30px;
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
      }
 
 
      .regform{
       width: 900px;
-      background-color: green;
+      background-color: rgb(143, 251, 143);
       margin-left: 100px;
       padding: 10px 0px 10px 0px;
       text-align: center;
       border-radius: 15px 15px 0px 0px;
-      margin-left: 800px;
+      margin-left: 700px;
       margin-top: 100px;
      }
 
@@ -64,6 +72,33 @@
       grid-template-columns: 1fr 1fr;
       grid-gap: 3em;
      }
+
+     @media only screen and (max-width:1000px)
+     {
+     .main{
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr;
+      grid-template-areas: 
+      "header"
+      "para1"
+      "para3"
+      "image"
+      "para4"
+      ;
+     }
+    }
+
+    .footer{
+      background-color: black;
+      color: white;
+      text-align: center;
+      margin-left: 200px;
+      margin-right: 200px;
+      padding-top: 100px;
+      margin-top: 30px;
+    }
+
+     
     </style>
 
 
@@ -142,8 +177,8 @@
         </div> 
 
         <h2 class="name">E-MAIL</h2>
-         <label><input type="email" class="email" name="" placeholder="ghfgmail.com"></label>
-         <label><input type="conform your password" class="email" name="" placeholder="ghfgmail.com"></label>
+         <label><input type="email" class="email" name="" placeholder="ghf@gmail.com"></label>
+         <label><input type="conform your password" class="email" name="" placeholder="ghf@gmail.com"></label>
 
          <h2 class="name">PHONE NUMBER</h2>
             <select class="phone">
@@ -167,14 +202,18 @@
           </select></label>
 
           <P class="condition"><input type="checkbox" id="terms" name=""> I accept the terms and conditions </P><a href="https://www.google.com/search?q=internet&rlz=1C1UEAD_enIN982IN982&oq=inter&aqs=chrome.0.69i59j69i57j35i39j0i20i131i263i433i512l2j69i60l2j69i61.2331j0j7&sourceid=chrome&ie=UTF-8">terms and conditions</a>
-
+          
+          <div class="submit">
+            <input type="button" class="btn" value="Sign Up" name="">
+          </div>
+          
         
         </form>
+       
 
-        <div class="submit"> 
-          <input type="submit" value="Sign Up" style="height: 70px; width: 170px; font-size: 40px; background-color: rgb(191, 214, 247);">
-        </div>
-
+      </div>
+      <div class="footer">
+        @Alan Santo
       </div>
           
     </body>
