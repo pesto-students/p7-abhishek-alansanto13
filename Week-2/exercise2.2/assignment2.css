@@ -1,0 +1,79 @@
+.parent{
+  background-color: white;
+  width: 800px;
+  height: 400px;
+  margin-left: 350px;
+  margin-right: 350px;
+  margin-top: 150px;
+  display: flex;
+}
+.parent2{
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px;
+}
+.parent3{
+  display: flex;
+  flex-direction: column;
+}
+.box1{
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  transition: 1s;
+ 
+  z-index: 1;
+}
+.box2{
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+  transition: 1s;
+  
+  z-index: 1;
+}
+.box3{
+  background-color: yellow;
+  width: 200px;
+  height: 200px;
+  transition: 1s;
+  
+  z-index: 1;
+}
+.box4{
+  background-color: green;
+  width: 200px;
+  height: 200px;
+  transition: 1s;
+  
+  z-index: 1;
+}
+.parent:hover .box1{
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+
+
+.parent:hover .box2{
+  transform: rotate(-90deg);
+  transform-origin: bottom left;
+ 
+}
+.parent:hover .box3{
+  transform: rotate(-90deg);
+  transform-origin: top right;
+  
+}
+.parent:hover .box4{
+  transform: rotate(90deg);
+  transform-origin: bottom right;
+ 
+}
+
+.hi{
+  position: fixed;
+  font-size: 50px;
+  margin-top: 115px;
+  margin-left: 350px;
+  
+}
